@@ -48,6 +48,12 @@ const search = async (city) => {
     
     const response = await fetch(url);
     const data = await response.json();
+
+    if(!response.ok){
+      alert(data.message);
+      return;
+    }
+
     console.log(data);
     const icon = allIcons[data.weather[0].icon] || clear_icon;
     setWeatherData({
