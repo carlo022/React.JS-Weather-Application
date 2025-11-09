@@ -15,6 +15,12 @@ const Weather = () => {
   const [weatherData, setWeatherData] = useState(false);
   const inputRef = useRef();
 
+  const EnterKey = (e) => {
+    if(e.key === "Enter"){
+      search(inputRef.current.value);
+    }
+  }
+
   const allIcons = {
     "01d": clear_icon,
     "01n": clear_icon,
@@ -65,7 +71,7 @@ useEffect(()=>{
   return (
     <div className='weather'>
       <div className="search-bar">
-        <input ref={inputRef} type="text" placeholder='Search'/>
+        <input ref={inputRef} type="text" placeholder='Search'onKeyDown={EnterKey}/>
         <img src={search_icon} alt="" onClick={()=>search(inputRef.current.value)}/>
       </div>
       {weatherData?<>
