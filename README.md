@@ -1,4 +1,3 @@
-```markdown
 # React.JS Weather Application React.js + VITE
 
 [![Repo Size](https://img.shields.io/github/repo-size/carlo022/React.JS-Weather-Application?color=blue)](https://github.com/carlo022/React.JS-Weather-Application)
@@ -9,15 +8,12 @@
 
 This repository contains a polished, production-ready React weather application built to demonstrate modern front-end engineering skills: clean component design, API integration, responsive UI, performance-conscious builds, accessibility considerations, and deployment readiness.
 
-Live demo: (Add your deployed URL here)  
-Demo video: (Add YouTube or hosted video link here)
-
 ---
 
 Contents
 - Quick demo
 - Why this project (what it shows about my skills)
-- Key features & screenshots
+- Key features
 - Technical highlights & architecture
 - Installation & quick start
 - Example code snippets
@@ -28,12 +24,12 @@ Contents
 
 ---
 
-Quick demo (put your assets in /assets)
+Quick demo
 
 - Web View:  
-   <video controls src="./assets/WAppWebview.mp4" style="max-width:100%; height:auto;">Your browser does not support the video element.</video>
+   <video src="./src/assets/WAppWebview.mp4" style="max-width:100%; height:auto;">Your browser does not support the video element.</video>
 - Mobile View:  
-  ./assets/Mobile View.png
+  <img src="./assets/Mobile View.png"></img>
 
 ---
 
@@ -59,11 +55,6 @@ Key features
 - Robust error handling (invalid city, network errors)
 - Loading skeletons and accessible labels
 - Responsive layout for mobile & desktop
-
-Screenshots
-- Desktop: ./assets/screenshot-desktop.png  
-- Mobile: ./assets/screenshot-mobile.png
-
 ---
 
 Technical highlights & architecture
