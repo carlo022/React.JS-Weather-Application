@@ -31,9 +31,9 @@ Contents
 Quick demo (put your assets in /assets)
 
 - Web View:  
-   <video controls src="./assets/demo.mp4" style="max-width:100%; height:auto;">Your browser does not support the video element.</video>
+   <video controls src="./assets/WAppWebview.mp4" style="max-width:100%; height:auto;">Your browser does not support the video element.</video>
 - Mobile View:  
-  <video controls src="./assets/demo.mp4" style="max-width:100%; height:auto;">Your browser does not support the video element.</video>
+  ./assets/Mobile View.png
 
 ---
 
