@@ -27,9 +27,9 @@ Contents
 Quick demo
 
 - Web View:  
-   ![Demo Preview](./src/assets/WAppWebview.gif")
+   ![Demo Preview](./src/assets/WAppWebview.gif)
 - Mobile View:  
-  <img src="./src/assets/Mobile View.png"></img>
+  <img src="./src/assets/Mobile View.png" style="width:200px;height:400px;"></img>
 
 ---
 
