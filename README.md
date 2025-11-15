@@ -29,7 +29,7 @@ Quick demo
 - Web View:  
    <video src="./src/assets/WAppWebview.mp4" style="max-width:100%; height:auto;">Your browser does not support the video element.</video>
 - Mobile View:  
-  <img src="./assets/Mobile View.png"></img>
+  <img src="./src/assets/Mobile View.png"></img>
 
 ---
 
