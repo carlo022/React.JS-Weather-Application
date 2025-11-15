@@ -27,7 +27,7 @@ Contents
 Quick demo
 
 - Web View:  
-   <video src="./src/assets/WAppWebview.mp4" style="max-width:100%; height:auto;">Your browser does not support the video element.</video>
+   ![Demo Preview](./src/assets/WAppWebview.gif")
 - Mobile View:  
   <img src="./src/assets/Mobile View.png"></img>
 
