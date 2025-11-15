@@ -61,7 +61,8 @@ const search = async (city) => {
       windSpeed: data.wind.speed,
       temperature: Math.floor(data.main.temp),
       location: data.name,
-      icon: icon
+      icon: icon,
+      weathername: data.weather[0].description
     })
     
   } catch (error) {
@@ -81,6 +82,7 @@ useEffect(()=>{
         <img src={search_icon} alt="" onClick={()=>search(inputRef.current.value)}/>
       </div>
       {weatherData?<>
+      <h1 className='Weathername'>{weatherData.weathername}</h1>
       <img src={weatherData.icon} alt="" className='weather-icon'/>
       <p className='temperature'>{weatherData.temperature}°C</p>
       <p className='location'>{weatherData.location}</p>

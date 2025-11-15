@@ -71,3 +71,8 @@
     width: 26px;
     margin-top: 10px;
 }
+
+.weather .Weathername{
+    color: #fff;
+    font-size: 40px;
+}
