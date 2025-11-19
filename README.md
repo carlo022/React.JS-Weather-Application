@@ -13,6 +13,7 @@ This repository contains a polished, production-ready React weather application 
 Contents
 - Quick demo
 - Key features
+- Technical highlights & architecture
 - Installation & quick start
 - Contributing, License, Contact
 
@@ -41,7 +42,7 @@ Technical highlights & architecture
 - Stack: React (functional components + hooks), CSS (or CSS-in-JS), Fetch/axios, OpenWeather API
 - Language composition: ~71% JavaScript, ~23% CSS, ~6% HTML
 - Folder structure (simplified):
-
+  
 Design decisions
 - Separation of concerns: services/weatherService.js encapsulates API contracts and retries.
 - Small, focused components so each unit is easy to test and reuse.
