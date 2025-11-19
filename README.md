@@ -12,14 +12,8 @@ This repository contains a polished, production-ready React weather application 
 
 Contents
 - Quick demo
-- Why this project (what it shows about my skills)
 - Key features
-- Technical highlights & architecture
 - Installation & quick start
-- Example code snippets
-- Performance & quality metrics (how I measured)
-- Challenges solved & lessons learned
-- How to showcase the project in interviews
 - Contributing, License, Contact
 
 ---
@@ -30,22 +24,7 @@ Quick demo
    ![Demo Preview](./src/assets/WAppWebview.gif)
 - Mobile View:  
   <img src="./src/assets/Mobile View.png" style="width:200px;height:400px;"></img>
-
----
-
-Why this project — what it demonstrates about my skills
-
-- Full-stack thinking (API integration + UI): I integrated the OpenWeather API handling authentication, query params, units, and error states.
-- Component architecture & state management: Cleanly separated presentational and container components using React hooks.
-- UX & responsiveness: Mobile-first responsive layout, accessible controls, keyboard-friendly search, and clear error/empty states.
-- Production readiness: Build optimization, environment configuration, and deployment instructions for Vercel/Netlify/GitHub Pages.
-- Observability & testing: Basic unit tests and end-to-end test plans; metrics such as Lighthouse score, bundle size, and test coverage are considered.
-- Problem solving: Rate-limit handling, debounced searches, and graceful degradation when APIs fail—details below.
-
-Use this project as a portfolio piece to show how you approach building user-facing features with reliability, performance, and maintainability in mind.
-
----
-
+----
 Key features
 
 - Search weather by city or use geolocation
@@ -167,53 +146,6 @@ export default function SearchBar({ onSearch }) {
   );
 }
 ```
-
----
-
-Performance & quality metrics (show off measurable results)
-
-- Lighthouse (example target): Performance >= 90, Accessibility >= 90, Best Practices >= 90
-- Bundle size: Keep main bundle < 150 KB (gzipped) through code-splitting and removing large libs
-- API request optimizations: Debouncing and conditional fetching to keep requests < X/min
-- Tests: Unit tests with Jest + React Testing Library; aim for >70% coverage on core components (add badges if CI configured)
-- CI: Add GitHub Actions to run lint, tests, and build on PRs, then show the passing badge here once added.
-
-Add badges (replace with real URLs after configuring CI)
-- Build: ![Build](https://img.shields.io/badge/build-passing-brightgreen)
-- Tests: ![Coverage](https://img.shields.io/badge/coverage-75%25-yellow)
-
----
-
-Challenges solved & lessons learned (concrete, interview-ready points)
-
-- Handling inconsistent API responses: implemented a small adapter layer that normalizes OpenWeather responses to a consistent shape used across components.
-- Rate limits & UX: introduced debounced searches and progressive loading states (skeleton UIs) so users have clear feedback while avoiding excessive API calls.
-- Accessibility improvements: fixed keyboard focus traps, ensured color contrast, and labeled interactive elements.
-- Deployment caveat: demonstrated why public API keys need restrictions and suggested serverless proxy approach for production.
-
----
-
-How to present this project in interviews / portfolio
-
-- Start with the demo video: show the user flows (search, unit toggle, geolocation) and error handling.
-- Describe one or two trade-offs you made (client-side API key vs proxy server; size vs third-party libs).
-- Show the code snippets above and explain separation of concerns and test strategies.
-- Mention measurable outcomes (Lighthouse, bundle size, test coverage) and future improvements planned.
-
-Suggested 3–4 talking points:
-1. "I used a debounced search input and an adapter for the OpenWeather payload to ensure consistent UI rendering and fewer API calls."
-2. "I focused on mobile-first responsive design and accessibility—keyboard users and screen readers are supported."
-3. "Production considerations: build size, CI, and deployment workflow to Vercel/Netlify."
-
----
-
-Next steps you can add to further showcase your skills
-
-- Add a GitHub Actions workflow to run lint/test/build and publish coverage; display the build/coverage badges.
-- Add Cypress end-to-end tests for the main flows (search, geolocation, toggle units).
-- Host a long-form walkthrough on YouTube and link it in this README.
-- Add a small serverless proxy to hide the API key and implement request caching.
-
 ---
 
 Contributing
